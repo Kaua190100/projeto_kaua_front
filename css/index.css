@@ -1,0 +1,215 @@
+body {
+   margin: 0;
+   font-family: Roboto, Arial, sans-serif;
+}
+
+.site-header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 1000;
+   width: 100%;
+   background-color: #fff;
+   border-bottom: 1px solid #e5e5e5;
+}
+
+.site-header .container {
+   display: flex;
+   align-items: center;
+   gap: 28px;
+   min-height: 63px;
+   padding: 0 28px;
+}
+
+.header-start,
+.logo {
+   display: flex;
+   align-items: center;
+}
+
+.header-start {
+   flex: 0 0 auto;
+   gap: 28px;
+}
+
+.menu-button,
+.search-button,
+.keyboard-button {
+   display: grid;
+   place-items: center;
+   flex: 0 0 auto;
+   border: 0;
+   cursor: pointer;
+}
+
+.menu-button {
+   width: 28px;
+   height: 40px;
+   padding: 7px 0;
+   gap: 4px;
+   background: transparent;
+}
+
+.menu-button span {
+   display: block;
+   width: 22px;
+   height: 2px;
+   border-radius: 2px;
+   background: #222;
+}
+
+.logo {
+   position: relative;
+   gap: 4px;
+   color: #111;
+   text-decoration: none;
+   white-space: nowrap;
+}
+
+.logo-play {
+   display: grid;
+   place-items: center;
+   width: 36px;
+   height: 25px;
+   border-radius: 7px;
+   background: #f03;
+}
+
+.logo-play svg {
+   width: 17px;
+   height: 17px;
+   fill: #fff;
+}
+
+.logo-name {
+   font-size: 23px;
+   font-weight: 700;
+   letter-spacing: -1px;
+}
+
+.logo-country {
+   align-self: flex-start;
+   margin: -4px 0 0 2px;
+   color: #606060;
+   font-size: 12px;
+}
+
+.search-form {
+   display: flex;
+   align-items: center;
+   flex: 1;
+   max-width: 750px;
+   height: 50px;
+   margin: 0 auto;
+}
+
+.search-form input {
+   width: 100%;
+   min-width: 0;
+   height: 100%;
+   padding: 0 20px;
+   border: 1px solid #c6c6c6;
+   border-right: 0;
+   border-radius: 26px 0 0 26px;
+   outline: none;
+   box-sizing: border-box;
+   font: inherit;
+   font-size: 20px;
+}
+
+.search-form input:focus {
+   border-color: #1c62b9;
+   box-shadow: inset 1px 0 #1c62b9;
+}
+
+.search-form input::placeholder {
+   color: #777;
+}
+
+.keyboard-button {
+   width: 48px;
+   height: 100%;
+   margin-left: -48px;
+   color: #777;
+   background: #fff;
+}
+
+.keyboard-button svg {
+   width: 19px;
+   height: 19px;
+   fill: none;
+   stroke: currentColor;
+   stroke-linecap: round;
+   stroke-linejoin: round;
+   stroke-width: 1.8;
+}
+
+.search-button {
+   width: 80px;
+   height: 100%;
+   border: 1px solid #c6c6c6;
+   border-radius: 0 26px 26px 0;
+   color: #111;
+   background: #f8f8f8;
+}
+
+.search-button:hover {
+   background: #f0f0f0;
+}
+
+.search-button svg {
+   width: 27px;
+   height: 27px;
+   fill: none;
+   stroke: currentColor;
+   stroke-width: 2;
+}
+
+@media (max-width: 650px) {
+   .site-header .container {
+      gap: 16px;
+      padding: 0 14px;
+   }
+
+   .header-start {
+      gap: 14px;
+   }
+
+   .logo-country,
+   .keyboard-button {
+      display: none;
+   }
+
+   .search-form {
+      height: 42px;
+   }
+
+   .search-form input {
+      padding: 0 12px;
+      font-size: 16px;
+   }
+
+   .search-button {
+      width: 48px;
+   }
+}
+
+@media (max-width: 400px) {
+   .site-header .container {
+      gap: 10px;
+      padding: 0 10px;
+   }
+
+   .header-start {
+      gap: 9px;
+   }
+
+   .logo-name {
+      font-size: 20px;
+   }
+
+   .logo-play {
+      width: 31px;
+      height: 22px;
+   }
+}

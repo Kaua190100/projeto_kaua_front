@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="css/index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisar</title>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-start">
+                <button class="menu-button" type="button" aria-label="Abrir menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <a class="logo" href="#inicio" aria-label="YouTube início">
+                    <span class="logo-play" aria-hidden="true">
+                        <svg viewBox="0 0 24 24"><path d="M9 6.8v10.4L17 12z" /></svg>
+                    </span>
+                    <span class="logo-name">YouTube</span>
+                    <span class="logo-country">BR</span>
+                </a>
+            </div>
+            <form class="search-form" action="https://www.youtube.com/results" method="get" role="search">
+                <input type="search" name="search_query" placeholder="Pesquisar" aria-label="Pesquisar">
+                <button class="keyboard-button" type="button" aria-label="Teclado virtual">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3zM6 9h1m3 0h1m3 0h1m3 0h1M6 12h1m3 0h1m3 0h1m3 0h1M8 15h8" /></svg>
+                </button>
+                <button class="search-button" type="submit" aria-label="Pesquisar">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8" /><path d="m16 16 5 5" /></svg>
+                </button>
+            </form>
+        </div>
+    </header>
+</body>
+</html>
